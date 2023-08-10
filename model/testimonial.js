@@ -11,6 +11,10 @@ const Testimonial = new mongoose.Schema({
         type: String,
         required: [true, "Client Picture is required"]
     },
+    fullImage: {
+        type: String,
+        required: [true, "Full image is required"]
+    },
     county: {
         type: String,
         required: [true, "Country is required"]
