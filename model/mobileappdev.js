@@ -15,9 +15,13 @@ const MobileAppDev = new mongoose.Schema({
         type: String,
         required: [true, "App image is required"]
     },
+    thumbnailImage: {
+        type: String,
+        required: [true, "Thumbnail image is required"]
+    },
     appSkills: {
         type: [{
-            value: String, label:String
+            value: String, label: String
         }],
         required: [true, "App skills are required"]
     },
@@ -31,7 +35,11 @@ const MobileAppDev = new mongoose.Schema({
     },
     portfolioType: {
         type: String,
-    }
+    },
+    likeCount: {
+        type: Number,
+        required: [true, "Like Count is required"]
+    },
 })
 
 module.exports = mongoose.model("MobileAppDev", MobileAppDev);

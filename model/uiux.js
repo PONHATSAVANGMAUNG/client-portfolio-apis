@@ -7,6 +7,10 @@ const UiUx = new mongoose.Schema({
         type: String,
         required: [true, "Web image is required"]
     },
+    fullImage: {
+        type: String,
+        required: [true, "Full image is required"]
+    },
     likeCount: {
         type: Number,
         required: [true, "Like Count is required"]
