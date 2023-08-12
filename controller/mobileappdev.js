@@ -47,7 +47,8 @@ const CreateMobileAppDev = async (req, res) => {
             selected: data.selected,
             portfolioType: data.portfolioType,
             likeCount: data.likeCount,
-            thumbnailImage: data.thumbnailImage
+            thumbnailImage: data.thumbnailImage,
+            views: data.views
         })
 
         res.status(201).json({

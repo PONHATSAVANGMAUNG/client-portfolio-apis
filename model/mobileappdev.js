@@ -40,6 +40,10 @@ const MobileAppDev = new mongoose.Schema({
         type: Number,
         required: [true, "Like Count is required"]
     },
+    views: {
+        type: Number,
+        required: [true, "Like Count is required"]
+    },
 })
 
 module.exports = mongoose.model("MobileAppDev", MobileAppDev);
