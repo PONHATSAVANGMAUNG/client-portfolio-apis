@@ -30,6 +30,7 @@ const CreateUiUx = async (req, res) => {
             views: data.views,
             selected:data.selected,
             portfolioType:data.portfolioType,
+            fullImage: data.fullImage
         })
 
         res.status(201).json({

@@ -52,7 +52,8 @@ const CreateTestimonial = async (req, res) => {
             county: data.county,
             countyPic: data.countyPic,
             review: data.review,
-            star: data.star
+            star: data.star,
+            fullImage: data.fullImage
         })
 
         res.status(201).json({

@@ -42,6 +42,7 @@ const CreatePresentation = async (req, res) => {
             type: data.type,
             selected:data.selected,
             portfolioType:data.portfolioType,
+            fullImage: data.fullImage
         })
 
         res.status(201).json({

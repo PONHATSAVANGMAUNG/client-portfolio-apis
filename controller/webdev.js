@@ -28,8 +28,9 @@ const CreateWebDev = async (req, res) => {
             webImage: data.webImage,
             likeCount: data.likeCount,
             views: data.views,
-            selected:data.selected,
-            portfolioType:data.portfolioType,
+            selected: data.selected,
+            portfolioType: data.portfolioType,
+            fullImage: data.fullImage
         })
 
         res.status(201).json({
